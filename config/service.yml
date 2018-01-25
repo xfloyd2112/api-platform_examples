@@ -1,0 +1,4 @@
+     filter.search_user_notification:
+        class:     'AppBundle\Filter\SearchUserNotifications'
+        arguments: [ '@doctrine', '@request_stack', '@security.token_storage' ]
+        tags:      [ { name: 'api_platform.filter', id: 'filter.search_user_notification' } ]
